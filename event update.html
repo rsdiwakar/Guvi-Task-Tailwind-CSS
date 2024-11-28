@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-header {
+            text-align: center;
+        }
+
+        .event-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .event-details {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .event-description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .event-date {
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        .rsvp-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .rsvp-form input[type="text"], .rsvp-form input[type="email"], .rsvp-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .rsvp-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .rsvp-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Event Update</h1>
+    <p>Stay updated with our latest event details!</p>
+</header>
+
+<div class="container">
+    <section class="event-header">
+        <h1>Exciting New Event: Tech Conference 2024</h1>
+        <p class="event-details">Join us for a day of tech talks, workshops, and networking.</p>
+    </section>
+
+    <section class="event-description">
+        <p>Our Tech Conference 2024 will bring together innovators, developers, and thought leaders from all over the world. Expect exciting presentations, hands-on workshops, and endless opportunities to connect with like-minded individuals.</p>
+    </section>
+
+    <section class="event-date">
+        <p><strong>Event Date:</strong> December 15, 2024, 9:00 AM - 5:00 PM</p>
+    </section>
+
+    <section class="rsvp-form">
+        <h2>RSVP for the Event</h2>
+        <form action="/submit-rsvp" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message or Comments:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requests or questions?" required></textarea>
+
+            <input type="submit" value="Submit RSVP">
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Tech Conference | All rights reserved.</p>
+</footer>
+
+</body>
+</html>
